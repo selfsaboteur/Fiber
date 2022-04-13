@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="SignUpStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="left">
+        <h3>Fiber</h3>
+
+        <h2>Create your Fiber account</h2>
+
+        <form action="">
+            <div>
+                <label for="name">Your Name</label><br>
+                <input type="text" required name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="email">E-mail</label><br>
+                <input type="email" required name="email" id="email" placeholder="Enter your e-mail">
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" required name="password" id="password" placeholder="Enter your password">
+
+                <img src="Fiber Starter Files/Assets/hide password.svg" onclick="myFunction()" alt="eye">
+            </div>
+            <div id="checkBox">
+                <input type="checkbox" required name="checkbox" id="checkbox">
+                <label id="checkboxlabel" for="checkbox">By creating an account on Fiber, you agree to the <a href="">Terms & Conditions</a>. </label>
+            </div>
+            <div>
+                <input type="submit" name="submit" id="submit" value="Create Fiber Account">
+            </div>
+        </form>
+        <p>Already have an account? <a href="">Sign In</a></p>
+    </div>
+
+    <div id="right">
+        <img id="signUpImage" src="Fiber Starter Files/Assets/Sign Up Image.png" alt="Sign Up Image">
+
+        <h2>Unparalleled Teamplates</h2>
+
+        <p>Crafted by a team of professionals designers, our templates are eunparalleled in the market.</p>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
